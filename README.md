@@ -2,9 +2,9 @@
 # nonRedCRE_tested
 Thoroughly tested prototype of multi-species, non-redundant, de novo CRE discovery pipeline. Publishable database and web-service in progress.
 
-#####################################################
+####################################################### 
 # README v4 2017-02-06 v3 -11-18 v2 -11-14  v1 -11-05 #
-#####################################################
+#######################################################
 
 BEFORE READING
 
@@ -139,7 +139,7 @@ Phase 2: Analyse Motifs (coordinated by: /home/ab108/0VB/2kb/scripts/stamp_to_co
 
     p2.1. python /home/ab108/0VB/2kb/scripts/stamp_to_collapsed/collapseMotifTree.py
 
-        generate a tree of motif similarity and collapse it at various depths, each collapsed node is a set of merged motifs, a motif cluster 
+        generate a tree of motif similarity and collapse it at various depths, each collapsed node is a set of merged motifs, a motif cluster, a.k.a motif family 
 
         WARNING: see commenting available in the script, try ctrl+f: "@WARN" within the script.
 
@@ -163,7 +163,7 @@ Phase 2: Analyse Motifs (coordinated by: /home/ab108/0VB/2kb/scripts/stamp_to_co
 
         ETA: 10 hrs (?)
  
-    p2.3. python /home/ab108/0VB/2kb/scripts/stamp_to_collapsed/collapseMotifTree_progressiveMode.py : blacklist_then_summaryStats_S_and_H_combos( S_from = 1, S_to = 21, S_step = 1, H_from = 1, H_to = 30, H_step = 1, e = 0.05)
+    p2.3. python /home/ab108/0VB/2kb/scripts/stamp_to_collapsed/collapseMotifTree_progressiveMode.py: blacklist_then_summaryStats_S_and_H_combos( S_from = 1, S_to = 21, S_step = 1, H_from = 1, H_to = 30, H_step = 1, e = 0.05)
 
         <describe it @todo>
 
@@ -173,7 +173,7 @@ Phase 2: Analyse Motifs (coordinated by: /home/ab108/0VB/2kb/scripts/stamp_to_co
  
     p2.4. cd /home/ab108/0VB/2kb/scripts/stamp_to_collapsed/progressiveMode_to_tomtom/ python format_db_cisbp_to_meme.py --> bash combos_to_tomtom_master.sh
         
-        comparing our motifs to target databases such as: CIS-BP, JASPAR CORE, JASPAR INSECTS and various Drosophila databases: OnTheFly_2014_Drosophila.meme, dmmpmm2009.meme, flyreg.v2.meme, idmmpmm2009.meme.
+        comparing our motifs to target databases such as: CIS-BP, JASPAR CORE, JASPAR INSECTS and various Drosophila databases: OnTheFly_<year>_Drosophila.meme, dmmpmm2009.meme, flyreg.v2.meme, idmmpmm2009.meme.
         
         p2.4.1 bash vennDiagram_master.sh
         
@@ -198,6 +198,11 @@ Phase 2: Analyse Motifs (coordinated by: /home/ab108/0VB/2kb/scripts/stamp_to_co
         ETA: 36 hr (?) per @species.
 
 
+    p2.6. python /home/ab108/0VB/2kb/scripts/stamp_to_collapsed/transcription_factor_OG_boxplots.py
+
+    	Boxplots acting on our motifs similar to visualisation in CIS-BP paper 
+
+
 
 
 GLOSSARY (and info  @todo):
@@ -216,7 +221,7 @@ GLOSSARY (and info  @todo):
 
     Not all species of the 21 available were used. For a list of species included in this motif discovery pipeline see the non-commented** lines in ./scripts/species_list.txt
 
-    Around 2014-11-xx, @Andy, @Bob and @Giannis decided it might be best to drop Aedes aegypti and Culex quinquefasciatus.
+    Around 14-11-xx, @Andy, @Bob and @Giannis decided it might be best to drop Aedes aegypti and Culex quinquefasciatus.
 
     **commented: lines of files prefixed with #
 
