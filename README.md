@@ -219,8 +219,30 @@ GLOSSARY (and info  @todo):
 
     one of the 21 newly sequenced/assembled insect species we are interested in. The list of species handeled is specified in ./scripts/pecies_list.txt, where species are listed line-by-line, for example:
 
-	Aedes aegypti
-	Culex quinquefasciatus
+	drosophila_melanogaster
+	#culex_quinquefasciatus
+	#aedes_aegypti
+	anopheles_darlingi
+	anopheles_albimanus
+	anopheles_atroparvus
+	anopheles_sinensis
+	anopheles_farauti
+	anopheles_dirus
+	anopheles_minimus
+	anopheles_funestus
+	anopheles_culicifacies
+	anopheles_maculatus
+	anopheles_stephensi
+	anopheles_epiroticus
+	anopheles_christyi
+	anopheles_melas
+	anopheles_merus
+	anopheles_quadriannulatus
+	anopheles_arabiensis
+	anopheles_gambiae
+	#anopheles_istephensi
+
+    Note: species prefixed with '#' are all ignored by the pipeline.
 
     Not all species of the 21 available were used. For a list of species included in this motif discovery pipeline see the non-commented** lines in ./scripts/species_list.txt
 
