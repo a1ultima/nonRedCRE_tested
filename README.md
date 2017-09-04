@@ -217,7 +217,10 @@ GLOSSARY (and info  @todo):
 
 @SPECIES
 
-    one of the 21 newly sequenced/assembled insect species we are interested in. 
+    one of the 21 newly sequenced/assembled insect species we are interested in. The list of species handeled is specified in ./scripts/pecies_list.txt, where species are listed line-by-line, for example:
+
+	Aedes aegypti
+	Culex quinquefasciatus
 
     Not all species of the 21 available were used. For a list of species included in this motif discovery pipeline see the non-commented** lines in ./scripts/species_list.txt
 
